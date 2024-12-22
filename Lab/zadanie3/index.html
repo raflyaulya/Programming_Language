@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Password Manager</h1>
+      </header>
+      <main>
+        <section id="password-list">
+          <h2>Saved Passwords</h2>
+          <ul id="passwords"></ul>
+        </section>
+        <section id="add-password">
+          <h2>Add New Password</h2>
+          <form id="password-form">
+            <label for="site">Site URL:</label>
+            <input type="url" id="site" name="site" required>
+    
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+    
+            <button type="button" id="generate">Generate Password</button>
+            <button type="submit">Save</button>
+          </form>
+        </section>
+      </main>
+      <script src="app.js"></script>
+</body>
+</html>

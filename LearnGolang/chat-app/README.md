@@ -34,22 +34,22 @@
 ### Режим сервера
 Для запуска приложения в режиме сервера:
 ```bash
-chat_app server <IP> <Port>
+go run main.go server <Port> 
 ```
 Пример:
 ```bash
-chat_app server 127.0.0.1 5000
+go run main.go server 5000
 ```
 Сервер начнет прослушивать подключения клиентов на указанном IP и порту.
 
 ### Режим клиента
 Для подключения к серверу в качестве клиента:
 ```bash
-chat_app client <Server IP> <Server Port>
+go run main.go client <Server IP> <Server Port>
 ```
 Пример:
 ```bash
-chat_app client 127.0.0.1 5000
+go run main.go client 127.0.0.1 5000
 ```
 После подключения:
 - Введите свой никнейм как первый ввод.
@@ -61,21 +61,21 @@ chat_app client 127.0.0.1 5000
 ## Примеры
 ### Запуск сервера
 ```bash
-chat_app server 127.0.0.1 5000
+go run main.go server 5000
 ```
 Вывод:
 ```
-Сервер запущен на 127.0.0.1:5000
+Server started on: 5000
 ```
 
 ### Запуск клиента
 ```bash
-chat_app client 127.0.0.1 5000
+go run main.go client 127.0.0.1 5000
 ```
 Ввод (на клиенте):
 ```
-Никнейм: alice
-Сообщение: @bob Привет, Боб!
+Enter your nickname: @Alex
+Сообщение: [@Alex]: hello there!
 Сообщение: Всем привет!
 ```
 
